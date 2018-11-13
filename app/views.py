@@ -80,10 +80,10 @@ def cadastro_candidatos(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/cadastro_candidatos.html’,
+        'app/cadastro_candidatos.html',
         context_instance = RequestContext(request,
         {
-            'title':'Cadastro de candidatos’,
+            'title':'Cadastro de candidatos',
             'Candidatos': Candidatos.objects.all( ),
             'year':datetime.now().year,
         })
